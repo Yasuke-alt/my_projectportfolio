@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 16px;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 4px solid #fff;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ffd54f;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 50px 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: #6a11cb;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #ddd;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    #about {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    img {
+      width: 50px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+      border: 3px solid #fff;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skills span,
+    .project-tech span {
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      /* Colors */
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      border: 1px solid #ccc;
+      transition: transform 0.3s, background 0.3s;
+      display: inline-block;
+    }
+
+    .skills span:hover,
+    .project-tech span:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      color: #333;
+    }
+
+    /* Project Section Styles */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 15px;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-card h3 {
+      color: #6a11cb;
+      margin-bottom: 10px;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ddd;
+    }
+
+    .project-card p {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>My Final Project Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#goal">Career Goal</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Home</h2>
+    <img src="WIN_20260621_21_41_00_Pro.jpg" alt="Profile Photo"
+      style="width:200px; height:200px; border-radius:50%; border:4px solid #6a11cb; object-fit:cover; object-position: center 20%; display:block; margin:0 auto 20px;">
+    <p><strong>Full Name:</strong> Errol James Pantilo</p>
+    <p><strong>Short Introduction:</strong> I'm an ACT student passionate about programming. I enjoy learning new
+      technologies and applying them to creative projects. I believe in using code to solve problems and create
+      meaningful solutions.</p>
+    <p><strong>Personal Tagline:</strong> “God did”</p>
+  </section>
+
+  <section id="about">
+    <div>
+      <h2>About Me</h2>
+      <p>Hello, I'm <strong>Errol James Pantilo</strong>, an ACT student passionate
+        about programming. I enjoy learning new technologies and applying them to creative projects. I believe that
+        technology can change lives, and I want to be part of that change by building systems that are useful and
+        innovative.</p>
+      <p>I started my journey by exploring different programming languages such as HTML, CSS, Python, and SQL. Over
+        time, I developed a strong interest in web development and database management, which motivated me to create
+        projects that reflect both creativity and functionality.</p>
+      <p>Aside from coding, I also enjoy watching K-dramas and anime, which inspire me to think creatively and tell
+        stories through design. I also apply this creativity in my studies and projects.</p>
+      <p><strong>Course/Program:</strong> Associate in Computer Technology (ACT)</p>
+      <p><strong>School:</strong> Datamex College of Saint Adeline</p>
+      <p><strong>Hobbies:</strong> Watching K-dramas & Anime, Walking alone, and reflecting quietly</p>
+      <p><strong>Interests:</strong> Books, Music, Web Development, Databases, and Creative Design</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Active Listening</span>
+      <span>Computer Skills</span>
+      <span>Time Management</span>
+      <span>Leadership</span>
+      <span>Problem-solving</span>
+    </div>
+  </section>
+
+  <!-- Projects Section satisfying criteria -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Project Item 1 -->
+      <div class="project-card">
+        <h3>Project Title: Student Information System</h3>
+        <img src="Screenshot 2026-10-21 110527.png" alt="Student Information System Screenshot">
+        <p><strong>Description:</strong> A web-based management system designed to organize and store student records,
+          manage course enrollments, and simplify administrative tracking effectively.</p>
+        <p><strong>Technologies used:</strong></p>
+        <div class="project-tech">
+          <span>VB.NET 2010</span>
+          <span>Microsoft Access</span>
+        </div>
+      </div>
+
+      <!-- Project Item 2 -->
+      <div class="project-card">
+        <h3>Project Title: Routine records system</h3>
+        <img src="Screenshot 2026-10-21 111716.png" alt="Personal Portfolio Screenshot">
+        <p><strong>Description:</strong> An interactive Python application that allows users to create, structure, and
+          organize daily routines. The system categorizes routines by time of day (Morning, Noon, Afternoon, Evening)
+          and captures essential activity metadata including activity name, location, estimated duration, and personal
+          notes/descriptions storing them into using Python dictionaries and lists.</p>
+        <p><strong>Technologies used:</strong></p>
+        <div class="project-tech">
+          <span> Python </span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Project Title: My Portfolio</h3>
+        <img src="Screenshot 2026-10-21 123007.png" alt="Personal Portfolio Screenshot">
+        <p><strong>Description:</strong> A personal portfolio website that introduces who I am, my studies as an ACT student, my coding skills, and my future goals. 
+            It shows my projects and gives visitors a simple way to contact me.</p>
+        <p><strong>Technologies used:</strong></p>
+        <div class="project-tech">
+          <span> HTML </span>
+          <span> CSS </span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="goal">
+    <h2>Career Goal</h2>
+    <p>My goal is to become a skilled IT professional, continuously improving my coding abilities and creating useful
+      applications that solve real-world problems. I want to specialize in web development and database management,
+      building systems that are both creative and functional.</p>
+    <p>I also aim to keep learning new programming languages and frameworks
+      to stay updated with the fast-changing digital world.</p>
+    <p>Beyond technical skills, I want to develop strong problem-solving abilities, teamwork, and leadership qualities
+      so I can guide others and share knowledge.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Information</h2>
+    <p>Email: <a href="mailto:errolpantilo@gmail.com">errolpantilo@gmail.com</a></p>
+    <p>Phone number: 09857592129</p>
+    <p>Facebook: <a href="https://www.facebook.com/">https://www.facebook.com/</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 My Portfolio | Designed by Me</p>
+  </footer>
+</body>
+
+</html>
